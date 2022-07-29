@@ -33,7 +33,7 @@ router.get('/:id', async (req, res) =>{
             }
         )
         if (!locationData) {
-            res.status(404).json({message: 'No reader found with that id!'})
+            res.status(404).json({message: 'No location found with that id!'})
             return;
             
         }
