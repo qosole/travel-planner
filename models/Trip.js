@@ -21,6 +21,7 @@ Trip.init(
         },
         traveller_id: {
             type: DataTypes.INTEGER,
+            unique: false,
             references: {
                 model: 'traveller',
                 key: 'id'
@@ -28,6 +29,7 @@ Trip.init(
         },
         location_id: {
             type: DataTypes.INTEGER,
+            unique: false,
             references: {
                 model: 'location',
                 key: 'id'
